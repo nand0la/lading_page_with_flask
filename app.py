@@ -31,7 +31,7 @@ def form_submit():
         mysql.connection.commit()
         cursor.close()
 
-        return f"enviado"
+        return render_template("enviado.html")
 
 
 app.run(debug=True)
